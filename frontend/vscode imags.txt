@@ -1,0 +1,34 @@
+
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743067731/login.svg',
+  
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743067852/email.svg',
+  
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743068059/eye-closed.svg',
+  
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743068241/eye.svg',
+  
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743068293/otp.svg',
+  
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743068372/password.svg',
+  
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743068437/register.svg',
+  
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743068519/user.svg',
+
+  secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743068585/welcome.svg',
+
+secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743069781/arrow.svg',
+
+secure_url: 'https://res.cloudinary.com/dkyv6zp0a/image/upload/v1743069816/delete.svg',
+  
+
+
+
+
+
+
+
+
+
+
+

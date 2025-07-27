@@ -1,0 +1,86 @@
+{
+  "name": "testone",
+  "displayName": "SmartCommit",
+  "publisher": "RavinduKavishan",
+  "description": "A VS Code extension that predicts a commit message based on Git differences.",
+  "version": "0.0.20",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "images/logo.jpg",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ravindu-Kavishan/GitCommitAI-VSCode.git"
+  },
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "SmartCommitContainer",
+          "title": "Smart Commit",
+          "icon": "images/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "SmartCommitContainer": [
+        {
+          "id": "SmartCommitView",
+          "name": "",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "extension.singleLineCommitMessage",
+        "title": "Generate Single Line Commit Messages"
+      },
+      {
+        "command": "extension.multiLineCommitMessage",
+        "title": "Generate Multi Line Commit Messages"
+      },
+      {
+        "command": "extension.getCommitMessage",
+        "title": "Get Commit Message"
+      },
+      {
+        "command": "extension.autofillCommitMessage",
+        "title": "Autofill Commit Message"
+      }
+    ],
+    "configuration": {
+      "title": "TestOne",
+      "properties": {
+        "testone.backendUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:8000/generate-commit-message/",
+          "description": "The URL of the backend server for generating commit messages."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
